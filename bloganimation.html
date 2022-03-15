@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Animation</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+.animate__animated { 
+    background-color: coral;
+    color:blanchedalmond;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  border-radius:.25em;
+  left:50%;
+  padding:10vmin;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+    </style>
+</head>
+<body>
+    <h1 class="animate__animated animate__backInDown">FUN WITH ANIMATION</h1>
+        <div><img width= 250px src="https://st.depositphotos.com/1235298/5109/v/600/depositphotos_51095821-stock-illustration-motivational-quote-poster.jpg"></div><br>
+        <div><img width="250px" src="https://www.givostore.com/wp-content/uploads/2021/06/Workplace-Funny-Motivational-Quotes-1.jpg"></div><br>
+        <div><img width="250px" src="https://www.dailyfunnyquote.com/wp-content/uploads/2018/07/Top-370-Funny-Quotes-With-Pictures-Sayings-2.png"></div><br>
+        <div><img width="250px" src="https://www.dailyfunnyquote.com/wp-content/uploads/2019/11/Short-funny-inspirational-quotes-to-laugh-about-life.jpg"></div><br>
+       <div><img width="250px" height="250px" src="https://www.joshloe.com/wp-content/uploads/2019/03/funny-motivational-quotes-for-friday-526x445.jpg"></div><br>
+        <div><img width="250px" src="https://tinypositive.com/wp-content/uploads/2019/02/67-Funny-Motivational-Quotes-to-Inspire-You-4.jpg"></div><br>
+        <div><img width= "250px" src="https://us.123rf.com/450wm/adzicnatasa/adzicnatasa1810/adzicnatasa181000030/110863196-can-we-start-the-weekend-again-i-wasn-t-ready-funny-motivational-quote-about-monday-and-week-start-.jpg"></div><br>
+        <div><img width="250px" src="https://www.coolfunnyquotes.com/images/quotes/680/i-do-all-my-own-stunts-but.jpg"></div><br>
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <div class="content"></div>
+      
+</body>
+</html>
